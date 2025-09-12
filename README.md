@@ -8,8 +8,8 @@
 ## References and Resources
 
 I used these videos for help
-[N/A](https://www.youtube.com/watch?v=5F5EJ1LUoZY)
-[N/A](https://www.youtube.com/watch?v=bS7jBuqmq4A)
+[Single Selection mode for ListView in Android Studio](https://www.youtube.com/watch?v=5F5EJ1LUoZY)
+[Add And Delete Items Of ListView](https://www.youtube.com/watch?v=bS7jBuqmq4A)
 
 ## Verbal Collaboration
 

@@ -7,7 +7,9 @@
 
 ## References and Resources
 
-N/A
+I used these videos for help
+[N/A](https://www.youtube.com/watch?v=5F5EJ1LUoZY)
+[N/A](https://www.youtube.com/watch?v=bS7jBuqmq4A)
 
 ## Verbal Collaboration
 

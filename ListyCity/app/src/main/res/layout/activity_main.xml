@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/topblock"
+        android:layout_width="410dp"
+        android:layout_height="70dp"
+        android:background="#009688"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/city_list"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ListyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/app_name"
+        android:textColor="#FFF5F5"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/topblock"
+        app:layout_constraintStart_toStartOf="@+id/topblock"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/addCity"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/add_city"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/city_list"
+        app:layout_constraintEnd_toStartOf="@+id/deleteCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topblock" />
+
+    <Button
+        android:id="@+id/deleteCity"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/del_city"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/city_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addCity"
+        app:layout_constraintTop_toBottomOf="@+id/topblock" />
+
+    <TextView
+        android:id="@+id/bottomblock"
+        android:layout_width="410dp"
+        android:layout_height="64dp"
+        android:background="#03FFFFFF"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/city_list" />
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:background="#00FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/city_list"
+        app:layout_constraintTop_toTopOf="@+id/bottomblock" />
+
+    <Button
+        android:id="@+id/confirm"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/confirm"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomblock" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomblock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enteredName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city_name"
+            android:inputType="text|textNoSuggestions"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomblock"
+        app:layout_constraintTop_toBottomOf="@+id/topblock"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"></ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

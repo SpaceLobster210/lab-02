@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListyCity</string>
+    <string name="add_city"><![CDATA[Add City]]></string>
+    <string name="del_city"><![CDATA[Delete City]]></string>
+    <string name="confirm">Confirm</string>
+    <string name="city_name"><![CDATA[City Name]]></string>
+</resources>
